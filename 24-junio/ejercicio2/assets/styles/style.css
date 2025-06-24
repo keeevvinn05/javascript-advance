@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 50px 1fr 40px;
+  grid-template-areas: 
+  "zh zh"
+  "zn zm"
+  "zf zf";
+ background-color: rgb(111, 203, 215);
+}
+
+header{
+  grid-area: zh;
+  background-color: rgb(191, 209, 71);
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+nav{
+  grid-area: zn;
+  color: rgb(0, 0, 3);
+  
+ color: #a7c431;
+    padding: 1rem;
+    background-color: rgba(0, 249, 199, 0.356); /* fondo negro translúcido */
+    border-radius: 10px; /* esquinas redondeadas */
+    backdrop-filter: blur(4px); /* efecto de difuminado del fondo */
+    -webkit-backdrop-filter: blur(4px); /* compatibilidad con Safari */
+    margin: 1rem;
+
+}
+
+main{
+grid-area: zm;
+background-color: rgb(137, 215, 111);
+color: aliceblue;
+padding: 1rem;
+
+}
+
+footer{
+  grid-area: zf;
+  background-color: rgb(246, 0, 0);
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px){
+  body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 40px 1fr 30px;
+    grid-template-areas: 
+    "zh"
+    "zn"
+    "zm"
+    "zf";
+    
+  }
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+}
+.error{
+  color: red;
+}

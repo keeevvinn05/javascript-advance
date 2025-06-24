@@ -1,0 +1,24 @@
+
+<form id="wizardForm">
+  <div class="step" data-step="1">
+    <h3>Datos Personales</h3>
+    <input type="text" id="firstName" placeholder="Nombre" required>
+    <input type="text" id="lastName" placeholder="Apellidos" required>
+  </div>
+  <div class="step" data-step="2" style="display:none;">
+    <h3>Contacto</h3>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="phone" placeholder="Teléfono" required>
+  </div>
+  <div class="step" data-step="3" style="display:none;">
+    <h3>Confirmación</h3>
+    <p id="summary"></p>
+  </div>
+  <div class="buttons">
+    <button type="button" id="prevBtn" style="display:none;">Anterior</button>
+    <button type="button" id="nextBtn">Siguiente</button>
+    <button type="submit" id="submitBtn" style="display:none;">Enviar</button>
+  </div>
+</form>
+<div id="result"></div>
+
